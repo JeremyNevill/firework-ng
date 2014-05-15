@@ -4,7 +4,7 @@ angular.module('azure-mobile-service.module', [])
     .service('Azureservice', function Azureservice($q) {
 
         var API_URL = 'https://firework.azure-mobile.net/';
-        var API_KEY = 'notused';
+        var API_KEY = 'na';
         var VAILD_OAUTH_PROVIDERS = ['google', 'twitter', 'facebook', 'windowsaccount', 'windowsazureactivedirectory'];
 
         var MobileServiceClient = WindowsAzure.MobileServiceClient;
