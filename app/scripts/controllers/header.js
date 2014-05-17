@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('fireworkNgApp')
-    .controller('HeaderController', function ($scope, Azureservice) {
+    .controller('HeaderController', function ($scope, Azureservice, $location) {
         $scope.isLoggedIn = Azureservice.isLoggedIn();
         $scope.AzureService = Azureservice;
 
@@ -9,6 +9,7 @@ angular.module('fireworkNgApp')
             Azureservice.logout();
             $scope.isLoggedIn = false;
             console.log('Logout');
+            $location.path("#/login");
         };
 
         $scope.$watch('AzureService.isLoggedIn()', function (newVal) {
