@@ -15,9 +15,7 @@ angular.module('fireworkNgApp')
         $scope.create = function () {
             Azureservice.insert('items', $scope.newItem)
                 .then(function () {
-                    console.log('Insert successful');
-                    refreshItems();
-                    $scope.alerts.push({type: 'success', msg: "Item added successfully"});
+                    $location.path("/timeline");
                 }, function (err) {
                     console.error('Error: ' + err);
                     $scope.alerts.push({type: 'danger', msg: "Item failed to add"});
