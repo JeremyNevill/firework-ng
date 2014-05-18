@@ -27,12 +27,9 @@
                 <label for="Date">Date/Time</label> <input ng-model="newItem.date" type="text" class="form-control"
                                                            id="date" placeholder="Date">
             </div>
-            <!--
             <div class="form-group">
-                <input ng-model="newItem.message" type="text" class="form-control" id="message"
-                       placeholder="Message">
+                {{ shortee(newItem) }}
             </div>
-            -->
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
     </div>

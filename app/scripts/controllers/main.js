@@ -74,4 +74,29 @@ angular.module('fireworkNgApp')
             $scope.alerts.splice(index, 1);
         };
 
+        $scope.shortee = function (itemToConstruct) {
+            var shorteeMessage = '';
+            if (typeof itemToConstruct.actor != 'undefined') {
+                shorteeMessage = shorteeMessage + '@' + itemToConstruct.actor;
+            }
+
+            if (typeof itemToConstruct.action != 'undefined') {
+                shorteeMessage = shorteeMessage + ' ' + itemToConstruct.action;
+            }
+
+            if (typeof itemToConstruct.amount != 'undefined') {
+                shorteeMessage = shorteeMessage + ' ' + itemToConstruct.amount;
+            }
+
+            if (typeof itemToConstruct.units != 'undefined') {
+                shorteeMessage = shorteeMessage + itemToConstruct.units;
+            }
+
+            if (typeof itemToConstruct.date != 'undefined') {
+                shorteeMessage = shorteeMessage + ' ' + itemToConstruct.date;
+            }
+
+            return shorteeMessage;
+        };
+
     });
