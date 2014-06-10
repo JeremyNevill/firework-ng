@@ -1,9 +1,9 @@
 firework-ng
 ===========
 
-[(firework-ng)](https://github.com/JeremyNevill/firework-ng) is an AngularJs web app with Microsoft Azure back end and part of the [Firework](https://github.com/JeremyNevill/firework) Open Source micrologging framework.
+[firework-ng](https://github.com/JeremyNevill/firework-ng) is an AngularJs web app with Microsoft Azure back end and part of the [Firework](https://github.com/JeremyNevill/firework) Open Source micrologging framework.
 
-[(firework-ng)](https://github.com/JeremyNevill/firework-ng) enables you to record the things you have done, like a to-done list, from any device that can handle a modern AngularJs web interface.
+[firework-ng](https://github.com/JeremyNevill/firework-ng) enables you to record the things you have done, like a to-done list, from any device that can handle a modern AngularJs web interface.
 
 Items that you have added include such attributes as actor(who), action(what), amount, units, date and time.
 
