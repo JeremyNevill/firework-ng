@@ -7,7 +7,7 @@ firework-ng
 
 Items that you have added include such attributes as actor(who), action(what), amount, units, date and time.
 
-Once stored you can browse your items by attribute and answer questions such as 'how many miles have I ran this year?'
+Once you start adding items you can browse your timeline by attribute and answer questions such as 'how many miles have I ran this year?' or 'when did I last a burrito?'
 
 
 ## Getting Started
