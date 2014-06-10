@@ -28,7 +28,7 @@ We have just released the first version of [firework-ng](https://github.com/Jere
 
 ## Build Status
 
-!https://travis-ci.org/JeremyNevill/firework-ng.svg?branch=master
+!(https://travis-ci.org/JeremyNevill/firework-ng.svg?branch=master)
 
 
 ## Aims
