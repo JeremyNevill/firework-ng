@@ -84,6 +84,11 @@ angular.module('fireworkNgApp')
                 shorteeMessage = shorteeMessage + ' ' + itemToConstruct.action;
             }
 
+            if (typeof itemToConstruct.actee != 'undefined') {
+                shorteeMessage = shorteeMessage + ' @' + itemToConstruct.actee;
+            }
+
+
             if (typeof itemToConstruct.amount != 'undefined') {
                 shorteeMessage = shorteeMessage + ' ' + itemToConstruct.amount;
             }
