@@ -20,7 +20,7 @@ angular.module('fireworkNgApp', [
             })
             .when('/add', {
                 templateUrl: 'views/add.html',
-                controller: 'MainController'
+                controller: 'AddController'
             })
             .when('/edit/:itemId', {
                 templateUrl: 'views/edit.html',
