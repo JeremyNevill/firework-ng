@@ -35,6 +35,18 @@ We have just released the first version of [firework-ng](https://github.com/Jere
 
 Once [firework-ng](https://github.com/JeremyNevill/firework-ng) is progressing well we will move onto providing a first native mobile app, using the same Azure Mobile Services interface to allow native access to the [Firework](https://github.com/JeremyNevill/firework) framework.
 
+## Deployment 
+
+To setup firework-ng on a fresh Azure Website:
+
+1) Create an Azure Website
+
+2) Add remote git repo on your azure website (in this instance we are setting up an dev environment azure-dev)
+```git remote add azure-dev https://yourusername@yoursite.scm.azurewebsites.net:443/yoursite.git```
+
+3) Push your local repo to the remote website repo (e.g. azure-dev)
+```git push azure-dev master```
+
 
 ## Get in Contact
 
