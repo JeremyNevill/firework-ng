@@ -5,9 +5,7 @@ firework-ng
 
 [firework-ng](https://github.com/JeremyNevill/firework-ng) enables you to record the things you have done, like a to-done list, from any device that can handle a modern AngularJs web interface.
 
-Log items that you have added include such attributes as actor(who), action(what), amount, units, date and time.
-
-Once you start adding items you can browse your timeline by attribute and answer questions such as 'how many miles have I ran this year?' or 'when did I last a burrito?'
+Log items that you have added include such attributes as actor(who), action(what), amount, units, date and time.  Once you start adding items you can browse your timeline by attribute and answer questions such as 'how many miles have I ran this year?' or 'when did I last have a burrito?'
 
 
 ## What is Micrologging?
@@ -22,10 +20,28 @@ The target is to allow adding of log items via json or shortee formats from any 
 
 
 ## Getting Started
+ 
+### Development Environment Setup
 
-We have just released the first version of [firework-ng](https://github.com/JeremyNevill/firework-ng), feel free to fork and get involved.
+* Fork the repo and open with your favourite IDE
+* Install the npm modules you require: ```npm install```
+
+### Run the Webserver 
+
+```grunt serve``
+
+Browse to [http://localhost:3000](http://localhost:3000) on a local dev machine
 
 
+### Single Run of Unit Tests (using Jasmine and Phantomjs)
+
+```grunt test```
+
+### Watch For Changed Files and Test
+
+```grunt watch```
+
+ 
 ## Build Status
 
 [![Build Status](https://travis-ci.org/JeremyNevill/firework-ng.svg?branch=master)](https://travis-ci.org/JeremyNevill/firework-ng)

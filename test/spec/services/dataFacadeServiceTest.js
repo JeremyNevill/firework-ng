@@ -11,10 +11,10 @@ describe('data service facade', function () {
 
         $httpBackend.expectGET('msgs/msgs.json').
             respond([
-                {msg: 'Hello'},
-                {msg: 'There'}
-            ]);
-    }));
+            {msg: 'Hello'},
+            {msg: 'There'}
+          ]);
+      }));
 
     describe('msgs provider', function () {
         it('should get a couple of msgs', function () {
@@ -23,11 +23,29 @@ describe('data service facade', function () {
                 expect(data).toEqual([
                     {msg: 'Hello'},
                     {msg: 'There'}
-                ]);
-            }));
+                  ]);
+              }));
 
             $httpBackend.flush();
 
-        });
-    });
-});
+          });
+      });
+  
+    describe('msgs provider', function () {
+        it('should get another couple of msgs', function () {
+            expect(dataFacade.getMsgs().success(function (data, status) {
+                expect(status).toBe(200);
+                expect(data).toEqual([
+                    {msg: 'Hello'},
+                    {msg: 'There'}
+                  ]);
+              }));
+
+            $httpBackend.flush();
+
+          });
+      });
+    
+  
+  
+  });
