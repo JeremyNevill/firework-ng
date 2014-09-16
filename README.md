@@ -23,8 +23,14 @@ The target is to allow adding of log items via json or shortee formats from any 
  
 ### Development Environment Setup
 
-* Fork the repo and open with your favourite IDE
+* Fork and clone the repo to your development machine/vm: ```git clone git@github.com:YourGithubAccount/firework-ng.git```
 * Install the npm modules you require: ```npm install```
+  * This may take a few minutes depending on the speed of your machine and internet connection
+* Install bower: ```npm install -g bower```
+  * Note the ```-g``` which installs bower globaly to enable use from the commandline and on other projects
+* Update bower components: ```bower install```
+* Install grunt cli: ```npm install -g grunt-cli```
+
 
 ### Run the Webserver 
 
@@ -36,6 +42,7 @@ Browse to [http://localhost:3000](http://localhost:3000) on a local dev machine
 ### Single Run of Unit Tests (using Jasmine and Phantomjs)
 
 ```grunt test```
+
 
 ### Watch For Changed Files and Test
 
