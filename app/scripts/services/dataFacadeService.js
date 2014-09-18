@@ -3,10 +3,10 @@
 
 'use strict';
 
-angular.module('myApp.dataFacade', []).factory("dataFacade", function ($http) {
+angular.module('myApp.dataFacade', []).factory('dataFacade', function ($http) {
 
     var _getMsgs = function () {
-        return $http.get("msgs/msgs.json");
+        return $http.get('msgs/msgs.json');
     };
 
     return {

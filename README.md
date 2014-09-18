@@ -1,25 +1,15 @@
 firework-ng
 ===========
 
-[firework-ng](https://github.com/JeremyNevill/firework-ng) is a micrologging web app with Microsoft Azure back end and part of the [Firework](https://github.com/JeremyNevill/firework) Open Source micrologging framework.
+[firework-ng](https://github.com/JeremyNevill/firework-ng) is a micrologging web app with Microsoft Azure back end and part of the [Firework](https://github.com/JeremyNevill/firework) Open Source micrologging framework.  Micrologging is what we're calling..  
+'concise log items that mean something, can be can be read by humans, and parsed by computers.'
 
 [firework-ng](https://github.com/JeremyNevill/firework-ng) enables you to record the things you have done, like a to-done list, from any device that can handle a modern AngularJs web interface.
 
 Log items that you have added include such attributes as actor(who), action(what), amount, units, date and time.  Once you start adding items you can browse your timeline by attribute and answer questions such as 'how many miles have I ran this year?' or 'when did I last have a burrito?'
 
 
-## What is Micrologging?
-
-Micrologging is what we're calling..
-
-'small log items that mean something, can be can be read by humans, and parsed by computers.'
-
-We are integrating our micrologging syntax [shortee](https://github.com/JeremyNevill/shortee/blob/master/Shortee_specification.md) into firework.
-
-The target is to allow adding of log items via json or shortee formats from any client.
-
-
-## Getting Started
+## Getting Started - Development
  
 ### Development Environment Setup
 
@@ -32,6 +22,11 @@ The target is to allow adding of log items via json or shortee formats from any 
 * Install grunt cli: ```npm install -g grunt-cli```
 
 
+### Single Run of Unit Tests (using Jasmine and Phantomjs)
+
+```grunt test```
+
+
 ### Run the Webserver 
 
 ```grunt serve``
@@ -39,17 +34,12 @@ The target is to allow adding of log items via json or shortee formats from any 
 Browse to [http://localhost:3000](http://localhost:3000) on a local dev machine
 
 
-### Single Run of Unit Tests (using Jasmine and Phantomjs)
-
-```grunt test```
-
-
 ### Watch For Changed Files and Test
 
 ```grunt watch```
 
  
-## Build Status
+## Project Build Status
 
 [![Build Status](https://travis-ci.org/JeremyNevill/firework-ng.svg?branch=master)](https://travis-ci.org/JeremyNevill/firework-ng)
 
@@ -70,6 +60,7 @@ To setup firework-ng on a fresh Azure Website:
 3) Push your local repo to the remote website repo (e.g. azure-dev)
 ```git push azure-dev master```
 
+4) Setup your azure mobile services backend - [to document]
 
 ## Get in Contact
 

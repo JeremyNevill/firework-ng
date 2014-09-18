@@ -283,9 +283,9 @@ angular.module('azure-mobile-service.module', [])
                 if (isUndefinedOrNotAnObject(options)) {
                     options = {
                         method: 'get'
-                    }
+                    };
                 } else if (isNullOrUndefined(options.method)) {
-                    options.method = 'get'
+                    options.method = 'get';
                 } else if (validMethods.indexOf(options.method.toLowerCase()) === -1) {
                     console.error('Azureservice.invokeApi Invalid method type');
                     return null;
