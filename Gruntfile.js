@@ -18,6 +18,18 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
+    typescript: {
+      base: {
+        src: ['app/scripts/**/*.ts'],
+        options: {
+          module: 'amd', //or commonjs
+          target: 'es5', //or es3
+          sourceMap: true,
+          declaration: true
+        }
+      }
+    },
+    
     // Project settings
     yeoman: {
       // configurable paths

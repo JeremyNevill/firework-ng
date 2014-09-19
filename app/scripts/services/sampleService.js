@@ -4,9 +4,9 @@
 var MyModule;
 (function (MyModule) {
     var SampleService = (function () {
-        function SampleService() {
-            this.actor = 'fred';
-            this.action = 'ran';
+        function SampleService(actor, action) {
+            this.actor = actor;
+            this.action = action;
             this.message = '@' + this.actor + ' ' + this.action;
         }
         SampleService.prototype.getMessage = function () {
@@ -18,6 +18,6 @@ var MyModule;
 })(MyModule || (MyModule = {}));
 
 angular.module('myApp.sampleService', []).factory('sampleService', function () {
-    return new MyModule.SampleService();
+    return new MyModule.SampleService('fred','skipped');
 });
 //# sourceMappingURL=sampleService.js.map

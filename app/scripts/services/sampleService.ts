@@ -8,9 +8,9 @@ module MyModule {
         message:string;
         action:string;
 
-        constructor() {
-            this.actor = 'fred';
-            this.action='ran';
+        constructor(actor: string,action:string) {
+            this.actor = actor;
+            this.action = action;
             this.message = '@' + this.actor + ' ' + this.action;
         }
 

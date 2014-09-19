@@ -11,7 +11,8 @@ describe('sample service', function () {
 
     describe('message function', function () {
         it('should return a message', function () {
-            expect(sampleService.getMessage('fred','ran')).toEqual('@fred ran');
+            
+            expect(sampleService.getMessage()).toEqual('@fred skipped');
         });
     });
 

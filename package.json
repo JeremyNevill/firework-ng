@@ -36,7 +36,8 @@
     "karma-safari-launcher": "~0.1.1",
     "karma-chrome-launcher": "~0.1.4",
     "karma-phantomjs-launcher": "~0.1.4",
-    "grunt-cli": "^0.1.13"
+    "grunt-cli": "^0.1.13",
+    "grunt-typescript": "^0.3.8"
   },
   "engines": {
     "node": ">=0.8.0"
