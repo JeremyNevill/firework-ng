@@ -3,21 +3,22 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3e7e6d12-0aa4-4cad-be92-b6a6a5043c3e}</ProjectGuid>
+    <ProjectGuid>{e3a527a0-8be0-484b-ab69-fc9d96d828b5}</ProjectGuid>
     <ProjectHome />
     <ProjectView>ShowAllFiles</ProjectView>
     <StartupFile>Gruntfile.js</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
-    <Content Include="app\views\add.html" />
-    <Content Include="app\views\timeline.html" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
     <Content Include="design.md" />
@@ -33,11 +34,60 @@
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\images\yeoman.png" />
     <Compile Include="app\scripts\app.js" />
-    <Compile Include="app\scripts\mobile-service.js" />
     <Content Include="app\styles\main.css" />
-    <Content Include="app\views\main.html" />
+    <Content Include="app\views\about.html" />
+    <Content Include="app\views\add.html" />
+    <Content Include="app\views\edit.html" />
+    <Content Include="app\views\home.html" />
+    <Content Include="app\views\login.html" />
+    <Content Include="app\views\timeline.html" />
+    <Compile Include="app\scripts\controllers\add.js" />
+    <Compile Include="app\scripts\controllers\edit.js" />
+    <Compile Include="app\scripts\controllers\header.js" />
+    <Compile Include="app\scripts\controllers\login.js" />
     <Compile Include="app\scripts\controllers\main.js" />
-    <Compile Include="test\spec\controllers\main.js" />
+    <TypeScriptCompile Include="app\scripts\services\sampleService.ts" />
+    <Compile Include="app\scripts\services\angular-azure-mobile-service.js" />
+    <Compile Include="app\scripts\services\dataFacadeService.js" />
+    <Compile Include="app\scripts\services\shorteeService.js" />
+    <Content Include="obj\Debug\firework-ng.njsproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\bower.json" />
+    <Content Include="obj\Debug\package.json" />
+    <Content Include="obj\Debug\design.md" />
+    <Content Include="obj\Debug\README.md" />
+    <Compile Include="obj\Debug\Gruntfile.js" />
+    <Compile Include="obj\Debug\karma-e2e.conf.js" />
+    <Compile Include="obj\Debug\karma.conf.js" />
+    <Content Include="obj\Debug\app\robots.txt" />
+    <Content Include="obj\Debug\app\404.html" />
+    <Content Include="obj\Debug\app\index.html" />
+    <Content Include="obj\Debug\app\favicon.ico" />
+    <Content Include="obj\Debug\test\runner.html" />
+    <Content Include="obj\Debug\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="obj\Debug\app\images\yeoman.png" />
+    <Compile Include="obj\Debug\app\scripts\app.js" />
+    <Content Include="obj\Debug\app\styles\main.css" />
+    <Content Include="obj\Debug\app\views\about.html" />
+    <Content Include="obj\Debug\app\views\add.html" />
+    <Content Include="obj\Debug\app\views\edit.html" />
+    <Content Include="obj\Debug\app\views\home.html" />
+    <Content Include="obj\Debug\app\views\login.html" />
+    <Content Include="obj\Debug\app\views\timeline.html" />
+    <Compile Include="obj\Debug\app\scripts\controllers\add.js" />
+    <Compile Include="obj\Debug\app\scripts\controllers\edit.js" />
+    <Compile Include="obj\Debug\app\scripts\controllers\header.js" />
+    <Compile Include="obj\Debug\app\scripts\controllers\login.js" />
+    <Compile Include="obj\Debug\app\scripts\controllers\main.js" />
+    <Compile Include="obj\Debug\app\scripts\services\angular-azure-mobile-service.js" />
+    <Compile Include="obj\Debug\app\scripts\services\dataFacadeService.js" />
+    <Compile Include="obj\Debug\app\scripts\services\sampleService.js" />
+    <Compile Include="obj\Debug\app\scripts\services\shorteeService.js" />
+    <Compile Include="obj\Debug\test\spec\controllers\main.js" />
+    <Compile Include="test\spec\controllers\main.js">
+      <Publish>True</Publish>
+    </Compile>
+    <Compile Include="test\spec\services\dataFacadeServiceTest.js" />
+    <Compile Include="test\spec\services\sampleServiceSpec.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app" />
@@ -45,11 +95,26 @@
     <Folder Include="app\images" />
     <Folder Include="app\scripts" />
     <Folder Include="app\scripts\controllers" />
+    <Folder Include="app\scripts\services" />
     <Folder Include="app\styles" />
     <Folder Include="app\views" />
+    <Folder Include="obj" />
+    <Folder Include="obj\Debug" />
+    <Folder Include="obj\Debug\app" />
+    <Folder Include="obj\Debug\app\fonts" />
+    <Folder Include="obj\Debug\app\images" />
+    <Folder Include="obj\Debug\app\scripts" />
+    <Folder Include="obj\Debug\app\scripts\controllers" />
+    <Folder Include="obj\Debug\app\scripts\services" />
+    <Folder Include="obj\Debug\app\styles" />
+    <Folder Include="obj\Debug\app\views" />
+    <Folder Include="obj\Debug\test" />
+    <Folder Include="obj\Debug\test\spec" />
+    <Folder Include="obj\Debug\test\spec\controllers" />
     <Folder Include="test" />
-    <Folder Include="test\spec\" />
+    <Folder Include="test\spec" />
     <Folder Include="test\spec\controllers" />
+    <Folder Include="test\spec\services" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
