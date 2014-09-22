@@ -5,13 +5,20 @@
 module MyModule {
     export class SampleService {
         actor:string;
-        message:string;
         action:string;
+		actee: string;
+		amount: number;
+		units: string;
+		message:string;
 
-        constructor(actor: string,action:string) {
+        constructor(actor: string, action:string,
+		amount:number, units:string) 
+		{
             this.actor = actor;
             this.action = action;
-            this.message = '@' + this.actor + ' ' + this.action;
+			this.amount = amount;
+			this.units = units;
+			this.message = '@' + this.actor + ' ' + this.action + ' ' + this.amount.toString() + this.units;
         }
 
         public getMessage():String {
