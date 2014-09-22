@@ -13,13 +13,27 @@ Log items that you have added include such attributes as actor(who), action(what
  
 ### Development Environment Setup
 
-* Fork and clone the repo to your development machine/vm: ```git clone git@github.com:YourGithubAccount/firework-ng.git```
-* Install the npm modules you require: ```npm install```
-  * This may take a few minutes depending on the speed of your machine and internet connection
-* Install bower: ```npm install -g bower```
-  * Note the ```-g``` which installs bower globaly to enable use from the commandline and on other projects
-* Update bower components: ```bower install```
-* Install grunt cli: ```npm install -g grunt-cli```
+Fork and clone the repo to your development machine/vm: 
+
+```git clone git@github.com:YourGithubAccount/firework-ng.git```
+
+Install the npm modules you require: 
+
+```npm install```
+
+Install bower: 
+
+```npm install -g bower```
+
+Note the ```-g``` which installs bower globaly to enable use from the commandline and on other projects
+
+Update bower components: 
+
+```bower install```
+
+Install grunt cli: 
+
+```npm install -g grunt-cli```
 
 
 ### Single Run of Unit Tests (using Jasmine and Phantomjs)
