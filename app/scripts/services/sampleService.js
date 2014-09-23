@@ -1,7 +1,4 @@
-/// <reference path="../jquery/jquery.d.ts" />
-/// <reference path="../angular/angular.d.ts" />
 'use strict';
- 
 var MyModule;
 (function (MyModule) {
     var SampleService = (function () {
@@ -21,6 +18,6 @@ var MyModule;
 })(MyModule || (MyModule = {}));
 
 angular.module('myApp.sampleService', []).factory('sampleService', function () {
-    return new MyModule.SampleService('fred','skipped');
+    return new MyModule.SampleService();
 });
 //# sourceMappingURL=sampleService.js.map
