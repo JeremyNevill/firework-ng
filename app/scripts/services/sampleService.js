@@ -4,10 +4,12 @@
 var MyModule;
 (function (MyModule) {
     var SampleService = (function () {
-        function SampleService(actor, action) {
+        function SampleService(actor, action, amount, units) {
             this.actor = actor;
             this.action = action;
-            this.message = '@' + this.actor + ' ' + this.action;
+            this.amount = amount;
+            this.units = units;
+            this.message = '@' + this.actor + ' ' + this.action + ' ' + this.amount.toString() + this.units;
         }
         SampleService.prototype.getMessage = function () {
             return this.message;
