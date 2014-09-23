@@ -4,28 +4,19 @@
 
 module MyModule {
     export class SampleService {
-        actor:string;
-        action:string;
-		actee: string;
-		amount: number;
-		units: string;
-		message:string;
 
-        constructor(actor: string, action:string,
-		amount:number, units:string) 
-		{
-            this.actor = actor;
-            this.action = action;
-			this.amount = amount;
-			this.units = units;
-			this.message = '@' + this.actor + ' ' + this.action + ' ' + this.amount.toString() + this.units;
-        }
+        message: string;
 
-        public getMessage():String {
+        constructor(public actor?: string, public action?: string,
+            public amount?: number, public units?: string)
+        { }
+
+        public getMessage(): String {
+            this.message = '@' + this.actor + ' ' + this.action + ' ' + this.amount.toString() + this.units;
             return this.message;
         }
     }
-}
+} 
 
 angular.module('myApp.sampleService', [])
     .factory('sampleService', ()=> {

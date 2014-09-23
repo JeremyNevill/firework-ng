@@ -9,6 +9,7 @@ angular.module('fireworkNgApp')
         $scope.editItem = null;
         $scope.orderProp = 'date';
         $scope.query = null;
+        $scope.cheese='edam';
 
        function refreshItems() {
             $scope.loading = true;

@@ -1,6 +1,7 @@
 /// <reference path="../jquery/jquery.d.ts" />
 /// <reference path="../angular/angular.d.ts" />
 'use strict';
+ 
 var MyModule;
 (function (MyModule) {
     var SampleService = (function () {
@@ -9,9 +10,9 @@ var MyModule;
             this.action = action;
             this.amount = amount;
             this.units = units;
-            this.message = '@' + this.actor + ' ' + this.action + ' ' + this.amount.toString() + this.units;
         }
         SampleService.prototype.getMessage = function () {
+            this.message = '@' + this.actor + ' ' + this.action + ' ' + this.amount.toString() + this.units;
             return this.message;
         };
         return SampleService;

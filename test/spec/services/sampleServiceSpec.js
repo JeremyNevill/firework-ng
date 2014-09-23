@@ -11,10 +11,11 @@ describe('sample service', function () {
 
     describe('message function', function () {
         it('should return a message', function () {
-            
-            expect(sampleService.getMessage()).toEqual('@fred skipped');
+          sampleService.actor='fred';
+          sampleService.action='skipped';
+          sampleService.amount=3;
+          sampleService.units='miles';
+          expect(sampleService.getMessage()).toEqual('@fred skipped 3miles');
         });
     });
-
 });
-
