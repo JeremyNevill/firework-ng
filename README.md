@@ -43,7 +43,7 @@ Install grunt cli:
 
 ### Run the Webserver 
 
-```grunt serve``
+```grunt serve```
 
 Browse to [http://localhost:3000](http://localhost:3000) on a local dev machine
 
@@ -69,9 +69,11 @@ To setup firework-ng on a fresh Azure Website:
 1) Create an Azure Website
 
 2) Add remote git repo on your azure website (in this instance we are setting up an dev environment azure-dev)
+
 ```git remote add azure-dev https://yourusername@yoursite.scm.azurewebsites.net:443/yoursite.git```
 
 3) Push your local repo to the remote website repo (e.g. azure-dev)
+
 ```git push azure-dev master```
 
 4) Setup your azure mobile services backend - [to document]
