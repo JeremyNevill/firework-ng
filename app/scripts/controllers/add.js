@@ -29,10 +29,12 @@ angular.module('fireworkNgApp')
             $scope.alerts.splice(index, 1);
         };
 
-        $scope.shortee = function (itemToConstruct) {
-            var ss=sampleService();  
-            ss.actor=itemToConstruct.actor;
-            return 'aaa';
-        };
-
+        $scope.shortee = function (item) {
+            sampleService.actor=item.actor;
+            sampleService.action=item.action;
+            sampleService.amount=item.amount;
+            sampleService.units=item.units;
+            return sampleService.getMessage();
+         };
+      
     });

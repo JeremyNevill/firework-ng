@@ -55,7 +55,7 @@ Browse to [http://localhost:3000](http://localhost:3000) on a local dev machine
  
 ## Project Build Status
 
-[![Build Status](https://travis-ci.org/JeremyNevill/firework-ng.svg?branch=master)](https://travis-ci.org/JeremyNevill/firework-ng)
+[![Build Status](https://semaphoreapp.com/api/v1/projects/25e0104c-6e8f-461f-8310-ce1c6f26b641/249056/badge.png)](https://semaphoreapp.com/jeremynevill/firework-ng)
 
 
 ## Aims

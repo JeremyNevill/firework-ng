@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('fireworkNgApp')
-    .controller('EditController', function ($scope, Azureservice, $location, $routeParams) {
+    .controller('EditController', function ($scope, Azureservice, $location, $routeParams, sampleService) {
 
         $scope.loading = true;
         $scope.itemId = $routeParams.itemId;
@@ -39,37 +39,15 @@ angular.module('fireworkNgApp')
             $scope.alerts.splice(index, 1);
         };
 
-        $scope.shortee = function (itemToConstruct) {
-            var shorteeMessage = '';
-            if (typeof itemToConstruct.actor != 'undefined') {
-                shorteeMessage = shorteeMessage + '@' + itemToConstruct.actor;
-            }
-
-            if (typeof itemToConstruct.action != 'undefined') {
-                shorteeMessage = shorteeMessage + ' ' + itemToConstruct.action;
-            }
-
-            if (typeof itemToConstruct.actee != 'undefined') {
-                shorteeMessage = shorteeMessage + ' @' + itemToConstruct.actee;
-            }
-
-            if (typeof itemToConstruct.amount != 'undefined') {
-                shorteeMessage = shorteeMessage + ' ' + itemToConstruct.amount;
-            }
-
-            if (typeof itemToConstruct.units != 'undefined') {
-                shorteeMessage = shorteeMessage + itemToConstruct.units;
-            }
-
-            if (typeof itemToConstruct.date != 'undefined') {
-                shorteeMessage = shorteeMessage + ' ' + itemToConstruct.date;
-            }
-
-            return shorteeMessage;
-        };
-
-
-
+        $scope.shortee = function (item) {
+            sampleService.actor=item.actor;
+            sampleService.action=item.action;
+            sampleService.amount=item.amount;
+            sampleService.units=item.units;
+            return sampleService.getMessage();
+         };
+      
+            // if (typeof itemToConstruct.actor != 'undefined') {
 
 
     });
