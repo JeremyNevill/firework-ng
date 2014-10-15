@@ -33,10 +33,7 @@
     "karma": "~0.12.1",
     "karma-ng-html2js-preprocessor": "~0.1.0",
     "karma-jasmine": "~0.1.5",
-    "karma-safari-launcher": "~0.1.1",
-    "karma-chrome-launcher": "~0.1.4",
     "karma-phantomjs-launcher": "~0.1.4",
-    "grunt-cli": "^0.1.13",
     "grunt-typescript": "^0.3.8"
   },
   "engines": {
