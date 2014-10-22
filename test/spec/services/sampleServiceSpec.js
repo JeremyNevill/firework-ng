@@ -3,7 +3,7 @@
 describe('sample service', function () {
 
     var sampleService;
-
+  
     beforeEach(module('myApp.sampleService'));
     beforeEach(inject(function (_sampleService_) {
         sampleService = _sampleService_;
@@ -17,8 +17,8 @@ describe('sample service', function () {
           sampleService.units='miles';
           expect(sampleService.getMessage()).toEqual('@fred skipped 3miles');
         });
-    });
-  
+    });    
+
     describe('message function', function () {
         it('should return another valid message', function () {
           sampleService.actor='JANE';

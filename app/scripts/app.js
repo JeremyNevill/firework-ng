@@ -13,7 +13,7 @@ angular.module('fireworkNgApp', [
         $routeProvider
             .when('/', {
                 templateUrl: 'views/home.html',
-                controller: 'MainController'
+                controller: 'HomeController'
             })
             .when('/timeline', {
                 templateUrl: 'views/timeline.html',
