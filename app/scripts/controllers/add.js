@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('fireworkNgApp')
-    .controller('AddController', function ($scope, Azureservice, $location, sampleService) {
+    .controller('AddController', function ($scope, Azureservice, $location, shorteeService) {
 
         $scope.newItem = {};
         $scope.loading = true;
         $scope.query = null;
- 
+
         $scope.create = function () {
             Azureservice.insert('items', $scope.newItem)
                 .then(function () {
@@ -30,11 +30,11 @@ angular.module('fireworkNgApp')
         };
 
         $scope.shortee = function (item) {
-            sampleService.actor=item.actor;
-            sampleService.action=item.action;
-            sampleService.amount=item.amount;
-            sampleService.units=item.units;
-            return sampleService.getMessage();
-         };
-      
+            shorteeService.actor = item.actor;
+            shorteeService.action = item.action;
+            shorteeService.amount = item.amount;
+            shorteeService.units = item.units;
+            return shorteeService.getMessage();
+        };
+
     });

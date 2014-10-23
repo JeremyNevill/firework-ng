@@ -6,7 +6,7 @@ angular.module('fireworkNgApp', [
     'ngSanitize',
     'ngRoute',
     'azure-mobile-service.module',
-    'myApp.sampleService'
+    'myApp.shorteeService'
     ])
     .config(function ($routeProvider) {
 

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('fireworkNgApp')
-    .controller('EditController', function ($scope, Azureservice, $location, $routeParams, sampleService) {
+    .controller('EditController', function ($scope, Azureservice, $location, $routeParams, shorteeService) {
 
         $scope.loading = true;
         $scope.itemId = $routeParams.itemId;
@@ -40,14 +40,14 @@ angular.module('fireworkNgApp')
         };
 
         $scope.shortee = function (item) {
-            sampleService.actor=item.actor;
-            sampleService.action=item.action;
-            sampleService.amount=item.amount;
-            sampleService.units=item.units;
-            return sampleService.getMessage();
-         };
-      
-            // if (typeof itemToConstruct.actor != 'undefined') {
+            shorteeService.actor = item.actor;
+            shorteeService.action = item.action;
+            shorteeService.amount = item.amount;
+            shorteeService.units = item.units;
+            return shorteeService.getMessage();
+        };
+
+        // if (typeof itemToConstruct.actor != 'undefined') {
 
 
     });
