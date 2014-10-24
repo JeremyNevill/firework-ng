@@ -20,7 +20,7 @@ module.exports = function (grunt) {
 
     typescript: {
       base: {
-        src: ['app/scripts/services/sampleService.ts'],
+        src: ['app/scripts/services/*.ts'],
         options: {
           target: 'es5', //or es3
           sourceMap: true,

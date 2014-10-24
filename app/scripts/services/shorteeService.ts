@@ -7,11 +7,12 @@ module MyModule {
 
         message:string;
 
-        constructor(public actor?:string, public action?:string, public amount?:number, public units?:string) {
+        constructor(public actor?:string, public action?:string, 
+                    public amount?:number, public units?:string, public date?:string) {
         }
 
         public getMessage():String {
-            this.message = '@' + this.actor + ' ' + this.action + ' ' + this.amount.toString() + this.units;
+            this.message = '@' + this.actor + ' ' + this.action + ' ' + this.amount.toString() + this.units + ' ' + this.date;
             return this.message;
         }
     }
