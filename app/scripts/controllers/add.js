@@ -34,6 +34,7 @@ angular.module('fireworkNgApp')
             shorteeService.action = item.action;
             shorteeService.amount = item.amount;
             shorteeService.units = item.units;
+            shorteeService.date = item.date;
             return shorteeService.getMessage();
         };
 

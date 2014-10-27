@@ -26,7 +26,7 @@ describe('sample service', function () {
             shorteeService.action = 'Ran';
             shorteeService.amount = 3.4;
             shorteeService.units = 'feet';
-          shorteeService.date ='22/feb/2000';
+            shorteeService.date ='22/feb/2000';
             expect(shorteeService.getMessage()).toEqual('@JANE Ran 3.4feet 22/feb/2000');
         });
     });
