@@ -1,7 +1,7 @@
 firework-ng
 ===========
 
-Please note this project has been superceded by a Meteor version located at (https://github.com/JeremyNevill/firework)[https://github.com/JeremyNevill/firework]
+Please note this project has been superceded by a Meteor version located at [https://github.com/JeremyNevill/firework](https://github.com/JeremyNevill/firework)
 
 *** 
 
