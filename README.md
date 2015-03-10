@@ -1,6 +1,10 @@
 firework-ng
 ===========
 
+Please note this project has been superceded by a Meteor version located at (https://github.com/JeremyNevill/firework)[https://github.com/JeremyNevill/firework]
+
+*** 
+
 [firework-ng](https://github.com/JeremyNevill/firework-ng) is a micrologging web app with Microsoft Azure back end and part of the [Firework](https://github.com/JeremyNevill/firework) Open Source micrologging framework.  Micrologging is what we're calling..  
 'concise log items that mean something, can be can be read by humans, and parsed by computers.'
 
@@ -57,10 +61,6 @@ Browse to [http://localhost:3000](http://localhost:3000) on a local dev machine
 
 [![Build Status](https://semaphoreapp.com/api/v1/projects/25e0104c-6e8f-461f-8310-ce1c6f26b641/249056/badge.png)](https://semaphoreapp.com/jeremynevill/firework-ng)
 
-
-## Aims
-
-Once [firework-ng](https://github.com/JeremyNevill/firework-ng) is progressing well we will move onto providing a first native mobile app, using the same Azure Mobile Services interface to allow native access to the [Firework](https://github.com/JeremyNevill/firework) framework.
 
 ## Deployment 
 
